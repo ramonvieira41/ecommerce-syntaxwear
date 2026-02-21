@@ -1,7 +1,7 @@
 .card{
     background-position: center;
     background-size: cover;
-    background-repeat:no-repeat ;
+    background-repeat: no-repeat;
     position: relative;
     border-radius: 20px;
 }
@@ -35,14 +35,15 @@
     grid-area: sneaker-silver;
     background-image: url(../../images/products/futurista-grid.jpg);
 }
-.products-section{
+.grid-section{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 300px);
-    grid-template-areas: "highlight highlight sneaker-purple sneaker-purple"
-    "highlight highlight model sneaker-color"
-    "sneaker-white sneaker-white model sneaker-silver";
-    gap: 30px;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(3, 300px);
+	grid-template-areas:
+		"highlight highlight sneaker-purple sneaker-purple"
+		"highlight highlight model sneaker-color"
+		"sneaker-white sneaker-white model sneaker-silver";
+	gap: 30px;
 
 }
 
@@ -73,27 +74,29 @@
     gap: 10px;
 }
 
-@media (max-width: 768px){
-    .grid-section{
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(5, auto);
-        grid-template-areas: 
-        "highlight highlight"
-        "sneaker-white sneaker-white"
-        "model sneaker-color"
-        "model sneaker-silver"
-        "sneaker-purple sneaker-purple";
-        max-width: 100%;
-        gap: 0.625rem;
-    }
-    .highlight{
-        min-height: 500px;
-    }
+@media (max-width:768px) {
+	.grid-section{
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: repeat(5, auto);
+		grid-template-areas: 
+		"highlight highlight"
+		"sneaker-white sneaker-white"
+		"model sneaker-color"
+		"model sneaker-silver"
+		"sneaker-purple sneaker-purple";
+		max-width: 100%;
+		gap: 0.625rem;
+	}
 
-    .model{
-        min-height: 370px;
-    }
-    .sneaker-white, .sneaker-purple{
-        min-height: 190px;
-    }
+	.highlight{
+		min-height: 500px;
+	}
+
+	.model{
+		min-height: 370px;
+	}
+
+	.sneaker-white, .sneaker-purple{
+		min-height: 190px;
+	}
 }
