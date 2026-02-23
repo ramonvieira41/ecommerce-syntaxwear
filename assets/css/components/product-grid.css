@@ -1,4 +1,4 @@
-.card{
+.card {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -6,48 +6,54 @@
     border-radius: 20px;
 }
 
-.highlight{
+.highlight {
     grid-area: highlight;
     background-image: url(../../images/products/card_imagem.jpg);
-   
-    
+
+
 }
-.sneaker-purple{
+
+.sneaker-purple {
     grid-area: sneaker-purple;
     background-image: url(../../images/products/tênis\ roxo\ e\ verde.jpg);
 
 }
-.model{
+
+.model {
     grid-area: model;
     background-image: url(../../images/products/modelo-grid.jpg);
-    
+
 }
-.sneaker-color{
+
+.sneaker-color {
     grid-area: sneaker-color;
     background-image: url(../../images/products/moderno-grid.jpg);
-    
+
 }
-.sneaker-white{
+
+.sneaker-white {
     grid-area: sneaker-white;
     background-image: url(../../images/products/tênis\ preto\ azul.jpg);
 }
-.sneaker-silver{
+
+.sneaker-silver {
     grid-area: sneaker-silver;
     background-image: url(../../images/products/futurista-grid.jpg);
 }
-.grid-section{
+
+.grid-section {
     display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(3, 300px);
-	grid-template-areas:
-		"highlight highlight sneaker-purple sneaker-purple"
-		"highlight highlight model sneaker-color"
-		"sneaker-white sneaker-white model sneaker-silver";
-	gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    grid-template-areas:
+        "highlight highlight sneaker-purple sneaker-purple"
+        "highlight highlight model sneaker-color"
+        "sneaker-white sneaker-white model sneaker-silver";
+    gap: 30px;
 
 }
 
-.top1-content{
+.top1-content {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -55,48 +61,49 @@
     text-align: center;
 }
 
-.card-title{
+.card-title {
     color: #EDEDED;
     font-size: 1.25rem;
     font-weight: 400;
     margin-bottom: 10px;
 }
 
-.card-subtitle{
+.card-subtitle {
     color: #EDEDED;
     font-size: 1.5rem;
     font-weight: 400;
     margin-bottom: 20px;
 }
 
-.cta-group{
+.cta-group {
     display: flex;
     gap: 10px;
 }
 
 @media (max-width:768px) {
-	.grid-section{
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: repeat(5, auto);
-		grid-template-areas: 
-		"highlight highlight"
-		"sneaker-white sneaker-white"
-		"model sneaker-color"
-		"model sneaker-silver"
-		"sneaker-purple sneaker-purple";
-		max-width: 100%;
-		gap: 0.625rem;
-	}
+    .grid-section {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas:
+            "highlight highlight"
+            "sneaker-white sneaker-white"
+            "model sneaker-color"
+            "model sneaker-silver"
+            "sneaker-purple sneaker-purple";
+        max-width: 100%;
+        gap: 0.625rem;
+    }
 
-	.highlight{
-		min-height: 500px;
-	}
+    .highlight {
+        min-height: 500px;
+    }
 
-	.model{
-		min-height: 370px;
-	}
+    .model {
+        min-height: 370px;
+    }
 
-	.sneaker-white, .sneaker-purple{
-		min-height: 190px;
-	}
+    .sneaker-white,
+    .sneaker-purple {
+        min-height: 190px;
+    }
 }

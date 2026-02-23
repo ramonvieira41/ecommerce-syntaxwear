@@ -1,4 +1,4 @@
-.categories-container{
+.categories-container {
     padding-top: 40px;
     padding-bottom: 40px;
     display: flex;
@@ -8,21 +8,22 @@
     gap: 30px;
 }
 
-.category-card{
+.category-card {
     position: relative;
     width: 317px;
     height: 500px;
     border-radius: 15px;
     overflow: hidden;
 }
-.overlay{
+
+.overlay {
     position: absolute;
     inset: 0;
     background-color: rgba(0, 0, 0, 0.25);
     z-index: 1;
 }
 
-.category-name{
+.category-name {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -31,27 +32,29 @@
     text-align: center;
 }
 
-.casual{
+.casual {
     background: url(../../images/products/tênis\ casual.jpg) no-repeat center;
     background-size: cover;
 }
-.esporte{
+
+.esporte {
     background: url(../../images/products/tênis\ exportivo.jpg) no-repeat center;
     background-size: cover;
 }
-.moderno{
+
+.moderno {
     background: url(../../images/products/tênis\ colorido.jpg) no-repeat center;
     background-size: cover;
 }
 
-.futurista{
+.futurista {
     background: url(../../images/products/tênis\ futurista.jpg) no-repeat center;
     background-size: cover;
 }
 
 
-@media (max-width: 500px){
-    .category-card{
+@media (max-width: 500px) {
+    .category-card {
         width: 100%;
     }
 }
