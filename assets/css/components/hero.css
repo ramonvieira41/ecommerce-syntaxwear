@@ -40,8 +40,6 @@
     font-weight: 400;
 }
 
-
-
 @media (max-width: 768px) {
     .hero-section {
         height: 660px;
