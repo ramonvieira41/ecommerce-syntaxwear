@@ -32,6 +32,12 @@
     text-align: center;
 }
 
+.category-name:hover {
+    color: #ffffff;
+    font-size: 1.75rem;
+    transition: color 0.3s, font-size 0.3s;
+}
+
 .casual {
     background: url(../../images/products/tênis\ casual.jpg) no-repeat center;
     background-size: cover;
