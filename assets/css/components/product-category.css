@@ -39,22 +39,22 @@
 }
 
 .casual {
-    background: url(../../images/products/tênis\ casual.jpg) no-repeat center;
+    background: url(../../images/products/tênis\ novocasual.png) no-repeat center;
     background-size: cover;
 }
 
 .esporte {
-    background: url(../../images/products/tênis\ exportivo.jpg) no-repeat center;
+    background: url(../../images/products/tênis\ novoesportivo.png) no-repeat center;
     background-size: cover;
 }
 
 .moderno {
-    background: url(../../images/products/tênis\ colorido.jpg) no-repeat center;
+    background: url(../../images/products/tênis\ novomoderno.png) no-repeat center;
     background-size: cover;
 }
 
 .futurista {
-    background: url(../../images/products/tênis\ futurista.jpg) no-repeat center;
+    background: url(../../images/products/tênis\ novofuturista.png) no-repeat center;
     background-size: cover;
 }
 
